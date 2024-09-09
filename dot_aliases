@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-
+# Enable timestamp for history command
+alias history="history -E 222"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."

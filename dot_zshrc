@@ -16,8 +16,65 @@ fi
 ### dido
 #
 
+# Alias
 if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
+# /Alias
+
+
+# AUTOCOMPLETION
+
+# initialize autocompletion
+autoload -U compinit
+compinit
+
+# autocompletion using arrow keys (based on history)
+bindkey '\e[A' history-search-backward
+bindkey '\e[B' history-search-forward
+
+# /AUTOCOMPLETION
+
+
+## History command configuration
+export HISTFILE=~/.zsh_history
+## sort ~/.bash_history | uniq | awk '{print ": :0:;"$0}' >> ~/.zsh_history
+# See time stamps in zsh history
+export HIST_STAMPS="%d/%m/%y %T"
+
+# Set no limit for history file size
+export HISTFILESIZE=-1
+
+# zsh history log loading the last 50000 lines into memory
+export HISTSIZE=50000
+
+# Do not save duplicate commands to history
+setopt HIST_IGNORE_ALL_DUPS
+
+# Do not find duplicate command when searching
+setopt HIST_FIND_NO_DUPS
+
+# Do not save duplicated command
+setopt HIST_SAVE_NO_DUPS
+
+# remove unnecessary blanks
+setopt HIST_REDUCE_BLANKS
+
+# append command to history file immediately after execution
+setopt INC_APPEND_HISTORY_TIME
+
+# record command start time
+setopt EXTENDED_HISTORY
+
+#To retrieve the history file everytime history is called upon.
+setopt share_history
+
+# Attempt to save all lines of a multiple-line command in the same entry
+# shopt -s cmdhist
+
+# After each command, append to the history file and reread it
+# export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$"\n"}history -a; history -c; history -r"
+
+## /History command configuration
 
 ### /dido
