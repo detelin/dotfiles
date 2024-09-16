@@ -1,0 +1,24 @@
+#!/bin/sh
+# https://code.badjware.dev/badjware/dotfiles
+
+{{ if eq .chezmoi.os "darwin" -}}
+
+brew bundle --no-lock --file=/dev/stdin <<EOF
+{{ range .packages.darwin.brews -}}
+brew {{ . | quote }}
+{{ end -}}
+{{ range .packages.darwin.casks -}}
+cask {{ . | quote }}
+{{ end -}}
+EOF
+
+{{ else if eq .chezmoi.os "linux" }}
+{{   if eq .chezmoi.osRelease.id "manjaro" }}
+sudo pamac upgrade --no-confirm
+sudo pamac install --no-confirm\
+   {{ range .packages.linux.manjaro_xfce_minimal -}} 
+{{ . | quote }} \
+{{ end -}}
+{{ end -}}
+{{ end -}}
+

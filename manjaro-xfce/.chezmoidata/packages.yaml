@@ -1,0 +1,24 @@
+# https://code.badjware.dev/badjware/dotfiles
+packages:
+  linux:
+    manjaro_xfce_minimal:
+      - zsh-autocomplete
+      - xfwm4-themes
+      - breeze-cursors-lh
+      - displaylink-connect
+      - firefox-ublock-origin
+      - firefox-dark-reader
+      - pacmanlogviewer
+      - vlc
+      - redshift
+      - ruby-fusuma
+      # - libreoffice-fresh-en-gb
+      - okular
+      - ddcutil-service
+      - clipit
+      - gnome-disk-utility
+      #- sublime-text-4
+      #- sublime-merge
+      #- ristretto
+      #- librewolf-allow-dark
+      #- librewolf-extension-darkreaders
