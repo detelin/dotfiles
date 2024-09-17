@@ -1,6 +1,9 @@
 # https://code.badjware.dev/badjware/dotfiles
 packages:
   linux:
+    command_line_interface:
+      - vim-airline
+      - vim-airline-themes
     manjaro_xfce_minimal:
       - zsh-autocomplete
       - xfwm4-themes
@@ -12,13 +15,14 @@ packages:
       - vlc
       - redshift
       - ruby-fusuma
-      # - libreoffice-fresh-en-gb
-      - okular
+      - translate-shell
       - ddcutil-service
       - clipit
       - gnome-disk-utility
-      #- sublime-text-4
-      #- sublime-merge
-      #- ristretto
-      #- librewolf-allow-dark
-      #- librewolf-extension-darkreaders
+      - smartgit
+      # - libreoffice-fresh-en-gb      
+      # - sublime-text-4
+      # - sublime-merge
+      # - ristretto
+      # - librewolf-allow-dark
+      # - librewolf-extension-darkreaders
