@@ -16,6 +16,9 @@ EOF
 {{   if eq .chezmoi.osRelease.id "manjaro" }}
 sudo pamac upgrade --no-confirm
 sudo pamac install --no-confirm\
+   {{ range .packages.linux.command_line_interface -}} 
+{{ . | quote }} \
+{{ end -}}
    {{ range .packages.linux.manjaro_xfce_minimal -}} 
 {{ . | quote }} \
 {{ end -}}
