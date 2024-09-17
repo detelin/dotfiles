@@ -15,6 +15,7 @@ packages:
       - vlc
       - redshift
       - ruby-fusuma
+      - xdotool
       - translate-shell
       - ddcutil-service
       - clipit
