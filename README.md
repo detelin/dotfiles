@@ -25,7 +25,9 @@ Check out the [Quick Start](https://www.chezmoi.io/quick-start/) page.
 ```sh
 sudo pacman -S chezmoi # Arch or Manjaro
 
-chezmoi init --apply detelin
+chezmoi init --apply --verbose https://github.com/detelin/dotfiles.git
+
+chezmoi init --apply --verbose detelin
 ```
 
 or
