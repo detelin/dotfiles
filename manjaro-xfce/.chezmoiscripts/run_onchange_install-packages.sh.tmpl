@@ -14,6 +14,7 @@ EOF
 
 {{ else if eq .chezmoi.os "linux" }}
 {{   if eq .chezmoi.osRelease.id "manjaro" }}
+sudo sed -Ei '/EnableAUR/s/^#//' /etc/pamac.conf
 sudo pamac upgrade --no-confirm
 sudo pamac install --no-confirm\
    {{ range .packages.linux.command_line_interface -}} 
