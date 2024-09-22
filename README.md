@@ -20,14 +20,31 @@ Feel free to reference or re-use (at your own risk).
 
 Check out the [Quick Start](https://www.chezmoi.io/quick-start/) page.
 
+### Install etckeeper to new machine (This is an optional step if you want to use etckeeper)
+
+```sh
+sudo pacman -Sy etckeeper # Arch or Manjaro
+
+sudo etckeeper init 
+
+sudo etckeeper commit "First commit of my /etc directory"
+
+```
+
 ### Install chezmoi and the dotfiles on any new machine
 
 ```sh
-sudo pacman -S chezmoi # Arch or Manjaro
+sudo pacman -Sy chezmoi # Arch or Manjaro
+
+sudo etckeeper commit "Installing chezmoi" # This is an optional step if you want to use etckeeper
 
 chezmoi init --apply --verbose https://github.com/detelin/dotfiles.git
 
-chezmoi init --apply --verbose detelin
+# or
+
+# chezmoi init --apply --verbose detelin
+
+sudo etckeeper commit "The configuration after cloning the Detelin dotfiles repo" # This is an optional step if you want to use etckeeper
 ```
 
 or
