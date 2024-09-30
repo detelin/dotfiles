@@ -20,7 +20,7 @@ Feel free to reference or re-use (at your own risk).
 
 Check out the [Quick Start](https://www.chezmoi.io/quick-start/) page.
 
-### Install etckeeper to new machine (This is an optional step if you want to use etckeeper)
+### Install etckeeper to new machine (This is an optional step if you want to use etckeeper[ref](https://www.tecmint.com/manage-etc-with-version-control-using-etckeeper/))
 
 ```sh
 sudo pacman -Sy etckeeper # Arch or Manjaro
