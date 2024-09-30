@@ -20,10 +20,12 @@ packages:
       - ddcutil-service
       - clipit
       - gnome-disk-utility
-      - smartgit
-      # - libreoffice-fresh-en-gb      
-      # - sublime-text-4
-      # - sublime-merge
-      # - ristretto
+      - sourcegit
+      - zed
+      - shellcheck
+      # - libreoffice-fresh-en-gb
       # - librewolf-allow-dark
       # - librewolf-extension-darkreaders
+      # - librewolf-bin
+      # - librewolf-extension-darkreader-bin
+      # - librewolf-extension-istilldontcareaboutcookies-bin
