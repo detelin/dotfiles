@@ -4,7 +4,7 @@
   <property name="SynPS2_Synaptics_TouchPad" type="empty">
     <property name="RightHanded" type="bool" value="true"/>
     <property name="Threshold" type="int" value="1"/>
-    <property name="Acceleration" type="double" value="8.000000"/>
+    <property name="Acceleration" type="double" value="8"/>
     <property name="Properties" type="empty">
       <property name="libinput_Tapping_Enabled" type="int" value="1"/>
     </property>
@@ -12,7 +12,7 @@
   <property name="SYNA360200_09115288_Touchpad" type="empty">
     <property name="RightHanded" type="bool" value="true"/>
     <property name="Threshold" type="int" value="1"/>
-    <property name="Acceleration" type="double" value="8.000000"/>
+    <property name="Acceleration" type="double" value="8"/>
     <property name="Properties" type="empty">
       <property name="libinput_Tapping_Enabled" type="int" value="1"/>
     </property>
@@ -23,6 +23,14 @@
     </property>
   </property>
   <property name="ALPS000100_09115288_Touchpad" type="empty">
+    <property name="Properties" type="empty">
+      <property name="libinput_Tapping_Enabled" type="int" value="1"/>
+    </property>
+  </property>
+  <property name="Elan_Touchpad" type="empty">
+    <property name="RightHanded" type="bool" value="true"/>
+    <property name="Threshold" type="int" value="1"/>
+    <property name="Acceleration" type="double" value="5.5"/>
     <property name="Properties" type="empty">
       <property name="libinput_Tapping_Enabled" type="int" value="1"/>
     </property>

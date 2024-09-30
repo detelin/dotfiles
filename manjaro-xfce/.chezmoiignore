@@ -1,0 +1,7 @@
+# https://www.chezmoi.io/reference/special-files-and-directories/chezmoiignore/
+.config/xfce4/xfconf/xfce-perchannel-xml/desktop/
+.config/xfce4/xfconf/xfce-perchannel-xml/displays.xml
+.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
+.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
+.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
+#.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml

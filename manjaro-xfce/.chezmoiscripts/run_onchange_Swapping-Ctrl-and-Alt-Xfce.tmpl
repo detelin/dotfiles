@@ -3,8 +3,6 @@
 
 {{if eq .chezmoi.os "linux" }}
 {{   if eq .chezmoi.osRelease.id "manjaro" }}
-sudo sed -i '40s|.*|include "ctrl(swap_lalt_lctl)"|' /usr/share/X11/xkb/symbols/pc 
+sudo sed -i '40s|.*|    include "ctrl(swap_lalt_lctl)"|' /usr/share/X11/xkb/symbols/pc
 {{ end -}}
 {{ end -}}
-
-
