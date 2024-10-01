@@ -1,0 +1,63 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette
+//
+{
+  // Default dock position for Project Panel to right
+  "project_panel": {
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  // Use relative line numbers
+  "relative_line_numbers": true,
+  "tab_bar": {
+    "show": true
+  },
+  // Indentation, rainbow indentation
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  // Use zed commit editor
+  "terminal": {
+    "env": {
+      "EDITOR": "zeditor --wait"
+    }
+  },
+  // To autosave when focus changes
+  "autosave": "on_focus_change",
+  // Base key bindings scheme
+  "base_keymap": "JetBrains",
+  // Always show the scrollbar
+  "scrollbar": {
+    "show": "always"
+  },
+  // Display the close button on the left
+  "close_position": "left",
+  //
+  "features": {
+    "inline_completion_provider": "none"
+  },
+  // Turn off telemetry
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  // The default font size for text in the UI
+  "ui_font_size": 20,
+  // The default font size for text in the editor
+  "buffer_font_size": 20,
+  //
+  "theme": {
+    "mode": "system",
+    "light": "Andromeda",
+    "dark": "One Dark"
+  }
+}
