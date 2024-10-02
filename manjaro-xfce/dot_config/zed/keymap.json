@@ -10,6 +10,8 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
+      "ctrl-1": "workspace::ToggleRightDock",
+      "ctrl-r": "search::ToggleReplace"
     }
   },
   {
@@ -19,9 +21,24 @@
     }
   },
   {
+    "context": "Teminal",
+    "bindings": {
+      "ctrl-w": "workspace::ToggleBottomDock"
+    }
+  },
+  {
     "context": "Editor",
     "bindings": {
       // "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  },
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      "space g g": [
+        "workspace::SendKeystrokes",
+        ": new center terminal enter lazygit enter"
+      ]
     }
   }
 ]
