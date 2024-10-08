@@ -4,6 +4,9 @@ packages:
     command_line_interface:
       - vim-airline
       - vim-airline-themes
+      - git
+      - gitui
+      - shellcheck
     manjaro_xfce_minimal:
       - zsh-autocomplete
       - xfwm4-themes
@@ -20,9 +23,8 @@ packages:
       - ddcutil-service
       - copyq
       - gnome-disk-utility
-      - sourcegit
       - zed
-      - shellcheck
+      - sublime-merge
       # - libreoffice-fresh-en-gb
       # - librewolf-allow-dark
       # - librewolf-extension-darkreaders
