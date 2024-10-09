@@ -18,7 +18,7 @@ packages:
       - xdotool
       - translate-shell
       - ddcutil-service
-      - clipit
+      - copyq
       - gnome-disk-utility
       - sourcegit
       - zed
