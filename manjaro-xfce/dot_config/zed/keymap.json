@@ -15,6 +15,14 @@
     }
   },
   {
+    //Key Bindings for Upper-Case and Lower-Case Text Transformations
+    "context": "Editor",
+    "bindings": {
+      "shift-ctrl-u": "editor::ConvertToUpperCase",
+      "shift-ctrl-l": "editor::ConvertToLowerCase"
+    }
+  },
+  {
     "context": "Workspace",
     "bindings": {
       "ctrl-t": "workspace::NewCenterTerminal"

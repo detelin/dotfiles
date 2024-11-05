@@ -9,6 +9,9 @@
 //
 {
   // Settings related to preview tabs.
+  "outline_panel": {
+    "dock": "right"
+  },
   "preview_tabs": {
     // Whether preview tabs should be enabled.
     // Preview tabs allow you to open files in preview mode, where they close automatically
@@ -20,12 +23,48 @@
     // Whether a preview tab gets replaced when code navigation is used to navigate away from the tab.
     "enable_preview_from_code_navigation": false
   },
-  // Default dock position for Project Panel to right
-  "project_panel": {
-    "dock": "right"
+  // File scan exclusions, hide on the file explorer and search
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    // above is default from Zed
+    "**/out",
+    "**/dist",
+    "**/.husky",
+    "**/.turbo",
+    "**/.vscode-test",
+    "**/.vscode",
+    "**/.next",
+    "**/.storybook",
+    "**/node_modules"
+  ],
+  // Disable Collab Panel, Assistant Panel, Chat Panel, Notification
+  "features": {
+    "copilot": false,
+    "inline_completion_provider": "none"
   },
   "collaboration_panel": {
-    "dock": "left"
+    "button": false
+  },
+  "chat_panel": {
+    "button": false
+  },
+  "assistant": {
+    "enabled": false,
+    "version": "2",
+    "button": false
+  },
+  "assistant_v2": {
+    "enabled": false
+  },
+  "notification_panel": {
+    "button": false
   },
   // Use relative line numbers
   "relative_line_numbers": true,
@@ -39,10 +78,12 @@
   },
   // Use zed commit editor
   "terminal": {
+    // "dock": "left",
     "shell": {
-      "program": "zsh"
+      "program": "nu"
     },
     // "shell": "system",
+    // "dock": "Center",
     "env": {
       "EDITOR": "zeditor --wait",
       "LANG": "en_GB.utf8",
@@ -57,11 +98,12 @@
   "scrollbar": {
     "show": "always"
   },
-  // Display the close button on the left
-  // "close_position": "left",
-  //
-  "features": {
-    "inline_completion_provider": "none"
+
+  // Default dock position for Project Panel to right
+  "project_panel": {
+    "button": true,
+    "dock": "right",
+    "git_status": true
   },
   // Turn off telemetry
   "telemetry": {
@@ -75,7 +117,7 @@
   //
   "theme": {
     "mode": "system",
-    "light": "Simple Darker",
+    "light": "Ayu Mirage",
     "dark": "One Dark"
   }
 }
