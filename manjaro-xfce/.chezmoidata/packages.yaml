@@ -4,8 +4,14 @@ packages:
     command_line_interface:
       - vim-airline
       - vim-airline-themes
+      - nushell
+      - oh-my-posh
+      - carapace
+      - shellcheck
+      - lazygit
+      - translate-shell
     manjaro_xfce_minimal:
-      - zsh-autocomplete
+      # - zsh-autocomplete
       - xfwm4-themes
       - breeze-cursors-lh
       - displaylink-connect
@@ -16,13 +22,10 @@ packages:
       - redshift
       - ruby-fusuma
       - xdotool
-      - translate-shell
       - ddcutil-service
       - copyq
       - gnome-disk-utility
-      - sourcegit
       - zed
-      - shellcheck
       # - libreoffice-fresh-en-gb
       # - librewolf-allow-dark
       # - librewolf-extension-darkreaders
